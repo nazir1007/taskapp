@@ -1,0 +1,20 @@
+<div class="container my-2">
+    <h1 class="h1 text-center">Update Task</h1>
+    <form id="myForm" action="/edit" method="post">
+      <input type="hidden" value="<%=data.id %>" name="hidden_id" />
+      <div class="mb-3">
+        <label class="form-label">Task</label>
+        <input
+          type="text"
+          class="form-control"
+          value="<%=data.task %>"
+          name="task"
+        />
+      </div>
+      <button type="submit" class="btn btn-success">Update</button>
+      <button type="submit" class="btn btn-outline-info">
+        <a href="/task">Back</a>
+      </button>
+      
+    </form>
+  </div>
